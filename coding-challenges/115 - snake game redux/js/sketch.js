@@ -8,7 +8,7 @@ function setup () {
     createCanvas(400, 400)
     w = floor(width / rez)
     h = floor(height / rez)
-    frameRate(10)
+    frameRate(15)
     snake = new Snake()
     foodLocation()    
 }
@@ -32,11 +32,6 @@ function draw () {
         foodLocation()
     }
     snake.show()
-    console.log(snake.body.length)
-    if (snake.body.length == 2){
-        console.log(snake.body)
-        // noLoop()
-    }
 
     // food
     noStroke()
